@@ -1,6 +1,6 @@
 describe("Calculator", () => {
     it("Test addition", () => {
-        cy.visit("http://localhost:5638");
+        cy.visit("http://localhost:8938");
         cy.contains("1").click();
         cy.contains("+").click();
         cy.contains("2").click();
@@ -9,7 +9,7 @@ describe("Calculator", () => {
     });
 
     it("Test soustraction", () => {
-        cy.visit("http://localhost:5638");
+        cy.visit("http://localhost:8938");
         cy.contains("2").click();
         cy.contains("-").click();
         cy.contains("1").click();
@@ -18,7 +18,7 @@ describe("Calculator", () => {
     });
 
     it("Test square", () => {
-        cy.visit("http://localhost:5638");
+        cy.visit("http://localhost:8938");
         cy.contains("4").click();
         cy.contains("√x").click();
         cy.contains("=").click();
@@ -26,7 +26,7 @@ describe("Calculator", () => {
     });
 
     it("Test modulo", () => {
-        cy.visit("http://localhost:5638");
+        cy.visit("http://localhost:8938");
         cy.contains("1").click();
         cy.contains("%").click();
         cy.contains("2").click();
